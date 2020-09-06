@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+
+class Post(models.Model):
+    title=models.CharField(max_length=50, blank=False, default='No title')
+    content=models.TextField()
+    published=models.BooleanField(default=False)
+
+    
