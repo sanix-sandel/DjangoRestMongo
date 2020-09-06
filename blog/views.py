@@ -7,7 +7,7 @@ from rest_framework import status, generics
 
 
 
-class PostListView(generics.ListCreateApiView):
+class PostListView(generics.ListCreateAPIView):
     queryset=Post.objects.all()
     serializer_class=PostSerializer
 
